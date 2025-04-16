@@ -13,7 +13,7 @@ const TestPage = () => {
 
   const fetchStudents = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/tests/test/${testId}/students`);
+      const response = await axios.get(`http://https://trackmyclass-backend.onrender.com/tests/test/${testId}/students`);
       setStudents(response.data);
     } catch (error) {
       console.error("Error fetching students:", error);
@@ -35,9 +35,9 @@ const TestPage = () => {
     }));
   
     try {
-      console.log("Submitting to URL:", `http://localhost:5000/tests/test/${testId}/marks`);
+      console.log("Submitting to URL:", `https://trackmyclass-backend.onrender.com/tests/test/${testId}/marks`);
       console.log("Payload:", marksArray);
-      await axios.post(`http://localhost:5000/tests/test/${testId}/marks`, { marks: marksArray });
+      await axios.post(`https://trackmyclass-backend.onrender.com/tests/test/${testId}/marks`, { marks: marksArray });
       alert("Marks submitted successfully!");
     } catch (error) {
       console.error("Error submitting marks:", error);
