@@ -16,7 +16,7 @@ const BatchDetails = () => {
 
   const fetchBatch = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/batches/${batchId}`);
+      const response = await axios.get(`http://https://trackmyclass-backend.onrender.com/batches/${batchId}`);
       setBatch(response.data);
     } catch (error) {
       console.error("Error fetching batch details:", error);
@@ -25,7 +25,7 @@ const BatchDetails = () => {
 
   const fetchStudents = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/auth/students/${batchId}`);
+      const response = await axios.get(`http://https://trackmyclass-backend.onrender.com/auth/students/${batchId}`);
       setStudents(response.data);
     } catch (error) {
       console.error("Error fetching students:", error);
@@ -34,7 +34,7 @@ const BatchDetails = () => {
 
   const fetchTests = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/tests/tests/${batchId}`);
+      const response = await axios.get(`http://https://trackmyclass-backend.onrender.com/tests/tests/${batchId}`);
       setTests(response.data);
     } catch (error) {
       console.error("Error fetching tests:", error);
