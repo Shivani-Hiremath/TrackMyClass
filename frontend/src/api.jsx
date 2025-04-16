@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/auth"; // Backend URL
+const API_URL = "https://trackmyclass-backend.onrender.com"; // Backend URL
 
 export const login = async (email, password) => {
     return await axios.post(`${API_URL}/login`, { email, password });
