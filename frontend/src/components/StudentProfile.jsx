@@ -13,7 +13,7 @@ const StudentProfile = () => {
 
   const fetchStudent = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/auth/student/${studentId}`);
+      const response = await axios.get(`http://https://trackmyclass-backend.onrender.com/auth/student/${studentId}`);
       setStudent(response.data);
     } catch (error) {
       console.error("Error fetching student profile:", error);
