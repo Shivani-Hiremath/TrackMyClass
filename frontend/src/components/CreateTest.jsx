@@ -19,7 +19,7 @@ const CreateTest = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://https://trackmyclass-backend.onrender.com/tests/create-test", { ...formData, batchId });
+      await axios.post("https://trackmyclass-backend.onrender.com/tests/create-test", { ...formData, batchId });
       navigate(`/batch/${batchId}`); // Redirect back to batch page
     } catch (error) {
       console.error("Error registering test:", error);
