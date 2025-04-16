@@ -13,7 +13,7 @@ const TestPage = () => {
 
   const fetchStudents = async () => {
     try {
-      const response = await axios.get(`http://https://trackmyclass-backend.onrender.com/tests/test/${testId}/students`);
+      const response = await axios.get(`http://trackmyclass-backend.onrender.com/tests/test/${testId}/students`);
       setStudents(response.data);
     } catch (error) {
       console.error("Error fetching students:", error);
