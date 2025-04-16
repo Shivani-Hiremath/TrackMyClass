@@ -19,7 +19,7 @@ const RegisterStudent = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://https://trackmyclass-backend.onrender.com/auth/register-student", { ...formData, batchId });
+      await axios.post("https://trackmyclass-backend.onrender.com/auth/register-student", { ...formData, batchId });
       navigate(`/batch/${batchId}`); // Redirect back to batch page
     } catch (error) {
       console.error("Error registering student:", error);
