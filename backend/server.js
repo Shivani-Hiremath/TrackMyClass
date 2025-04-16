@@ -10,7 +10,10 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://trackmyclass-frontendd.onrender.com",
+  credentials: true
+}));
 app.use(express.json());
 
 // Routes
