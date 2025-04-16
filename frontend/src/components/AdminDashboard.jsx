@@ -11,7 +11,7 @@ const AdminDashboard = () => {
 
   const fetchBatches = async () => {
     try {
-      const response = await fetch("http://https://trackmyclass-backend.onrender.com/batches/all");
+      const response = await fetch("https://trackmyclass-backend.onrender.com/batches/all");
       const data = await response.json();
       setBatches(data);
     } catch (error) {
@@ -21,7 +21,7 @@ const AdminDashboard = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://https://trackmyclass-backend.onrender.com/batches/${id}`, { method: "DELETE" });
+      await fetch(`https://trackmyclass-backend.onrender.com/batches/${id}`, { method: "DELETE" });
       fetchBatches();
     } catch (error) {
       console.error("Error deleting batch:", error);
