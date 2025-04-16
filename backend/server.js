@@ -9,14 +9,10 @@ const testRoutes = require("./routes/testRoutes");
 dotenv.config();
 connectDB();
 
-// Hardcoded frontend URL
-const FRONTEND_URL = "https://trackmyclass-frontendd.onrender.com";
-
 const app = express();
 
-// CORS configuration
 app.use(cors({
-  origin: FRONTEND_URL, // Use the hardcoded FRONTEND_URL
+  origin: "https://trackmyclass-frontendd.onrender.com",
   credentials: true
 }));
 
